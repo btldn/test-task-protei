@@ -1,0 +1,133 @@
+export type Lecture = {
+  id: string;
+  date: string;
+  time: string;
+  title: string;
+  speakerName: string;
+  speakerRole: string;
+  company: string;
+  image: string;
+};
+
+export const lectures: Lecture[] = [
+  {
+    id: "7-11",
+    date: "7 апреля",
+    time: "11:00-12:00",
+    title: "Вертикальное импортозамещение: Путь к технологической безопасности сетей связи",
+    speakerName: "Григорищенко Александр",
+    speakerRole: "Пресейл-менеджер",
+    company: "НТЦ ПРОТЕЙ",
+    image: './src/assets/speakers/vitaliy-pykhalov.jpg',
+  },
+  {
+    id: "7-12",
+    date: "7 апреля",
+    time: "12:00-13:00",
+    title: "Экосистема Унифицированных Коммуникаций ПРОТЕЙ",
+    speakerName: "Роман Дмитриев",
+    speakerRole: "Пресейл-менеджер",
+    company: "ПРОТЕЙ Технологии",
+    image: "./src/assets/speakers/roman-dmitriev.jpg",
+  },
+  {
+    id: "7-13",
+    date: "7 апреля",
+    time: "12:00-13:00",
+    title: "Единая среда реагирования: как связь управляет инцидентами в ERP и системах безопасности",
+    speakerName: "Павел Филиппов",
+    speakerRole: "Руководитель группы продуктового маркетинга",
+    company: "ПРОТЕЙ Технологии",
+    image: "./src/assets/speakers/pavel-filippov.jpg",
+  },
+  {
+    id: "7-16",
+    date: "7 апреля",
+    time: "16:00-17:00",
+    title: "Управление инфраструктурой в распределённых сетях: контроль сотен объектов из одной точки",
+    speakerName: "Роман Дмитриев",
+    speakerRole: "Пресейл-менеджер",
+    company: "ПРОТЕЙ Технологии",
+    image: "./src/assets/speakers/roman-dmitriev.jpg",
+  },
+  {
+    id: "8-11",
+    date: "8 апреля",
+    time: "11:00-12:00",
+    title: "Выделенные сети pLTE на объектах КИИ. Надёжная транспортная среда для взаимодействия людей и координации устройств",
+    speakerName: "Кочетков Игорь",
+    speakerRole: "Руководитель направления частных сетей",
+    company: "НТЦ ПРОТЕЙ",
+    image: "./src/assets/speakers/igor-kochetkov.jpg",
+  },
+  {
+    id: "8-12",
+    date: "8 апреля",
+    time: "12:00-13:00",
+    title: "Технологии профессиональной радиосвязи для критической связи в экстренных ситуациях",
+    speakerName: "Александр Григорищенко",
+    speakerRole: "Руководитель продуктового офиса NGN/IMS",
+    company: "НТЦ ПРОТЕЙ",
+    image: "./src/assets/speakers/alexandr-grigorishchenko.jpg",
+  },
+  {
+    id: "8-13",
+    date: "8 апреля",
+    time: "12:00-13:00",
+    title: "Системы оперативно-диспетчерской связи и управления: зонтичная система мониторинга",
+    speakerName: "Павел Филиппов",
+    speakerRole: "Руководитель группы продуктового маркетинга",
+    company: "ПРОТЕЙ Технологии",
+    image: "./src/assets/speakers/pavel-filippov.jpg",
+  },
+  {
+    id: "8-16",
+    date: "8 апреля",
+    time: "16:00-17:00",
+    title: "Тактическая система связи и оперативного реагирования «Метель»",
+    speakerName: "Олег Федоровских",
+    speakerRole: "Руководитель проектного офиса",
+    company: "ПРОТЕЙ СТ",
+    image: "./src/assets/speakers/pavel-filippov.jpg",
+  },
+  {
+    id: "9-11",
+    date: "9 апреля",
+    time: "11:00-12:00",
+    title: "Надёжная корпоративная сеть телефонной связи - что нужно и как создать?",
+    speakerName: "Пыхалов Виталий",
+    speakerRole: "Менеджер продуктов",
+    company: "ПРОТЕЙ Технологии",
+    image: "./src/assets/speakers/vitaliy-pykhalov.jpg",
+  },
+  {
+    id: "9-12",
+    date: "9 апреля",
+    time: "12:00-13:00",
+    title: "Стратегия обеспечения высокой доступности и надёжности информационных систем",
+    speakerName: "Олег Федоровских",
+    speakerRole: "Пресейл-менеджер",
+    company: "НТЦ ПРОТЕЙ",
+    image: "./src/assets/speakers/pavel-filippov.jpg",
+  },
+  {
+    id: "9-13",
+    date: "9 апреля",
+    time: "12:00-13:00",
+    title: "Неизвестно, будет ли",
+    speakerName: "123",
+    speakerRole: "123",
+    company: "",
+    image: "./src/assets/speakers/pavel-filippov.jpg",
+  },
+  {
+    id: "9-16",
+    date: "9 апреля",
+    time: "16:00-17:00",
+    title: "Неизвестно, будет ли",
+    speakerName: "123",
+    speakerRole: "123",
+    company: "",
+    image: "./src/assets/speakers/pavel-filippov.jpg",
+  },
+];
