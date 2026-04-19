@@ -3,35 +3,45 @@ import type { Lecture } from "../data/data.ts";
 import { useState } from "react";
 import Card from "./Card.tsx";
 
+type ScheduleProps = {
+  selectedLecturesIds: string[]
+  onToggleLecture: (lectureId: string) => void
+}
 
-function Schedule() {
+function Schedule(props: ScheduleProps) {
 
   const [lectures, setLectures] = useState<Lecture[]>([...lecturesData]);
   const [openedDate, setOpenedDate] = useState<string | null>(null);
 
+
   function toggleDate(date: string) {
     setOpenedDate((prev) => (prev === date ? null : date));
   }
-
 
   function renderLectures(date: string) {
     return (
       <>
         {lectures
           .filter((lecture: Lecture) => lecture.date == date)
-          .map((lecture: Lecture) => (
-            <Card
-              key={lecture.id}
-              id={lecture.id}
-              date={lecture.date}
-              time={lecture.time}
-              title={lecture.title}
-              speakerName={lecture.speakerName}
-              speakerRole={lecture.speakerRole}
-              company={lecture.company}
-              imagePath={lecture.image}
-            />
-        ))}
+          .map((lecture: Lecture) => {
+            const isSelected = props.selectedLecturesIds.includes(lecture.id)
+            return (
+              <Card
+                key={lecture.id}
+                id={lecture.id}
+                date={lecture.date}
+                time={lecture.time}
+                title={lecture.title}
+                speakerName={lecture.speakerName}
+                speakerRole={lecture.speakerRole}
+                company={lecture.company}
+                imagePath={lecture.image}
+                isSelected={isSelected}
+                onClick={() => props.onToggleLecture(lecture.id)}
+              />
+            )
+
+          })}
       </>
     )
   }

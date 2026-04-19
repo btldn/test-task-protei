@@ -1,4 +1,9 @@
-function Registration() {
+
+type RegistrationProps = {
+  selectedLecturesIds: string[];
+}
+
+function Registration(props: RegistrationProps) {
 
   return (
     <aside className='w-full max-w-[324px] md:max-w-[642px] xl:max-w-[360px]'>
@@ -32,7 +37,7 @@ function Registration() {
 
         </div>
 
-        <p className='mb-12 text-[16px]'>Выбрано N лекции</p>
+        <p className='mb-12 text-[16px]'>Выбрано <span className='text-cyan-400'>{props.selectedLecturesIds.length}</span> лекции</p>
         <button className= 'w-full py-3 mb-2 cursor-pointer text-[16px] bg-gradient-to-r from-[#006DEF1A] to-[#72C7FC1A] border border-cyan-400 rounded-[8px]'
                 type='submit'
         >

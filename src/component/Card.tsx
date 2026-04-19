@@ -7,12 +7,15 @@ type CardProps = {
   speakerRole: string;
   company: string;
   imagePath: string;
+  isSelected: boolean
+  onClick: () => void
 }
 
 function Card(props: CardProps) {
+
   return (
-    <div className='max-w-[324px] md:max-w-[642px] xl:max-w-[743px]'>
-      <div className="flex p-6 gap-4 rounded-[8px] bg-gradient-to-r from-[#006DEF1A] to-[#72C7FC1A] mb-4 text-white shadow-lg">
+    <div onClick={props.onClick} className={`max-w-[324px] md:max-w-[642px] xl:max-w-[743px] cursor-pointer `}>
+      <div className={`flex p-6 gap-4 rounded-[8px] bg-gradient-to-r from-[#006DEF1A] to-[#72C7FC1A] mb-4 text-white border ${props.isSelected ? 'border-cyan-400' : 'border-transparent'}`}>
         <div className="shrink-0">
           <img
             src={props.imagePath}
