@@ -58,7 +58,7 @@ export const lectures: Lecture[] = [
     speakerName: "Кочетков Игорь",
     speakerRole: "Руководитель направления частных сетей",
     company: "НТЦ ПРОТЕЙ",
-    image: "./src/assets/speakers/igor-kochetkov.jpg",
+    image: "./src/assets/speakers/blank.png",
   },
   {
     id: "8-12",
@@ -108,7 +108,7 @@ export const lectures: Lecture[] = [
     speakerName: "Олег Федоровских",
     speakerRole: "Пресейл-менеджер",
     company: "НТЦ ПРОТЕЙ",
-    image: "./src/assets/speakers/pavel-filippov.jpg",
+    image: "./src/assets/speakers/blank.png",
   },
   {
     id: "9-13",
@@ -118,7 +118,7 @@ export const lectures: Lecture[] = [
     speakerName: "123",
     speakerRole: "123",
     company: "",
-    image: "./src/assets/speakers/pavel-filippov.jpg",
+    image: "./src/assets/speakers/blank.png",
   },
   {
     id: "9-16",
@@ -128,6 +128,6 @@ export const lectures: Lecture[] = [
     speakerName: "123",
     speakerRole: "123",
     company: "",
-    image: "./src/assets/speakers/pavel-filippov.jpg",
+    image: "./src/assets/speakers/blank.png",
   },
 ];
