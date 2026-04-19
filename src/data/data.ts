@@ -1,3 +1,9 @@
+import aleksandrGrigorishchenkoImg from '../assets/speakers/alexandr-grigorishchenko.jpg';
+import blankImg from '../assets/speakers/blank.png';
+import pavelFilippovImg from '../assets/speakers/pavel-filippov.jpg';
+import romanDmitrievImg from '../assets/speakers/roman-dmitriev.jpg';
+import vitaliyPykhalovImg from '../assets/speakers/vitaliy-pykhalov.jpg';
+
 export type Lecture = {
   id: string;
   date: string;
@@ -18,7 +24,7 @@ export const lectures: Lecture[] = [
     speakerName: "Григорищенко Александр",
     speakerRole: "Пресейл-менеджер",
     company: "НТЦ ПРОТЕЙ",
-    image: './src/assets/speakers/vitaliy-pykhalov.jpg',
+    image: vitaliyPykhalovImg,
   },
   {
     id: "7-12",
@@ -28,7 +34,7 @@ export const lectures: Lecture[] = [
     speakerName: "Роман Дмитриев",
     speakerRole: "Пресейл-менеджер",
     company: "ПРОТЕЙ Технологии",
-    image: "./src/assets/speakers/roman-dmitriev.jpg",
+    image: romanDmitrievImg,
   },
   {
     id: "7-13",
@@ -38,7 +44,7 @@ export const lectures: Lecture[] = [
     speakerName: "Павел Филиппов",
     speakerRole: "Руководитель группы продуктового маркетинга",
     company: "ПРОТЕЙ Технологии",
-    image: "./src/assets/speakers/pavel-filippov.jpg",
+    image: pavelFilippovImg,
   },
   {
     id: "7-16",
@@ -48,7 +54,7 @@ export const lectures: Lecture[] = [
     speakerName: "Роман Дмитриев",
     speakerRole: "Пресейл-менеджер",
     company: "ПРОТЕЙ Технологии",
-    image: "./src/assets/speakers/roman-dmitriev.jpg",
+    image: romanDmitrievImg,
   },
   {
     id: "8-11",
@@ -58,7 +64,7 @@ export const lectures: Lecture[] = [
     speakerName: "Кочетков Игорь",
     speakerRole: "Руководитель направления частных сетей",
     company: "НТЦ ПРОТЕЙ",
-    image: "./src/assets/speakers/blank.png",
+    image: blankImg,
   },
   {
     id: "8-12",
@@ -68,7 +74,7 @@ export const lectures: Lecture[] = [
     speakerName: "Александр Григорищенко",
     speakerRole: "Руководитель продуктового офиса NGN/IMS",
     company: "НТЦ ПРОТЕЙ",
-    image: "./src/assets/speakers/alexandr-grigorishchenko.jpg",
+    image: aleksandrGrigorishchenkoImg,
   },
   {
     id: "8-13",
@@ -78,7 +84,7 @@ export const lectures: Lecture[] = [
     speakerName: "Павел Филиппов",
     speakerRole: "Руководитель группы продуктового маркетинга",
     company: "ПРОТЕЙ Технологии",
-    image: "./src/assets/speakers/pavel-filippov.jpg",
+    image: pavelFilippovImg,
   },
   {
     id: "8-16",
@@ -88,7 +94,7 @@ export const lectures: Lecture[] = [
     speakerName: "Олег Федоровских",
     speakerRole: "Руководитель проектного офиса",
     company: "ПРОТЕЙ СТ",
-    image: "./src/assets/speakers/pavel-filippov.jpg",
+    image: pavelFilippovImg,
   },
   {
     id: "9-11",
@@ -98,7 +104,7 @@ export const lectures: Lecture[] = [
     speakerName: "Пыхалов Виталий",
     speakerRole: "Менеджер продуктов",
     company: "ПРОТЕЙ Технологии",
-    image: "./src/assets/speakers/vitaliy-pykhalov.jpg",
+    image: vitaliyPykhalovImg,
   },
   {
     id: "9-12",
@@ -108,7 +114,7 @@ export const lectures: Lecture[] = [
     speakerName: "Олег Федоровских",
     speakerRole: "Пресейл-менеджер",
     company: "НТЦ ПРОТЕЙ",
-    image: "./src/assets/speakers/blank.png",
+    image: blankImg,
   },
   {
     id: "9-13",
@@ -118,7 +124,7 @@ export const lectures: Lecture[] = [
     speakerName: "123",
     speakerRole: "123",
     company: "",
-    image: "./src/assets/speakers/blank.png",
+    image: blankImg,
   },
   {
     id: "9-16",
@@ -128,6 +134,6 @@ export const lectures: Lecture[] = [
     speakerName: "123",
     speakerRole: "123",
     company: "",
-    image: "./src/assets/speakers/blank.png",
+    image: blankImg,
   },
 ];

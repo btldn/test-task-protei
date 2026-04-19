@@ -10,7 +10,6 @@ type ScheduleProps = {
 
 function Schedule(props: ScheduleProps) {
 
-  const [lectures, setLectures] = useState<Lecture[]>([...lecturesData]);
   const [openedDates, setOpenedDates] = useState<string[]>([]);
   const dates = ['7 апреля', '8 апреля', '9 апреля'];
 
@@ -25,7 +24,7 @@ function Schedule(props: ScheduleProps) {
   function renderLectures(date: string) {
     return (
       <>
-        {lectures
+        {lecturesData
           .filter((lecture: Lecture) => lecture.date == date)
           .map((lecture: Lecture) => {
             const isSelected = props.selectedLecturesIds.includes(lecture.id)

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import './App.css'
 import Schedule from "./component/Schedule.tsx";
 import Registration from "./component/Registration.tsx";
-import {lectures} from "./data/data.ts";
 
 function App() {
 

@@ -79,7 +79,7 @@ function Registration(props: RegistrationProps) {
             </div>
             <div className='flex flex-col md:col-span-2 xl:col-span-1'>
               <label className='mb-2 text-[10px] md:text-[14px] xl:text-[16px]' htmlFor="questions">Ваши вопросы к обсуждению</label>
-              <textarea className='bg-[#000C1480] p-2 rounded-[8px] outline-none placeholder:text-white/30 resize-none mb-6 text-[8px] md:text-[12px] xl:text-[14px]' name="questions" id="questions" cols="30" rows="6"  {...register('questions')} placeholder='Какие темы вам особенно интересны?'></textarea>
+              <textarea className='bg-[#000C1480] p-2 rounded-[8px] outline-none placeholder:text-white/30 resize-none mb-6 text-[8px] md:text-[12px] xl:text-[14px]' id="questions" cols={30} rows={6}  {...register('questions')} placeholder='Какие темы вам особенно интересны?'></textarea>
             </div>
 
         </div>
